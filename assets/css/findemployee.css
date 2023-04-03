@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    z-index: 1;
+    padding: 10px 32px;
+    border: none;
+}
+
+.navbar .brand {
+    font-size: 30px;
+}
+
+.navbar .list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 16px;
+    gap: 51px;
+    margin-left: 10%;
+}
+
+.navbar .list .job-list {
+    background-color: #282828;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -43px;
+    left: 28%;
+}
+
+.navbar .list .job-list ul {
+    display: flex;
+    list-style: none;
+    padding: 12px 64px;
+    gap: 64px;
+}
+
+.navbar .list .job-list::after {
+    content: " ";
+    position: absolute;
+    top: -42%;
+    left: 20%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #282828;
+}
+
+.navbar .list .job-list .selected-search {
+    color: #FF8500;
+    border-bottom: 2px solid #FF8500;
+}
+
+.navbar .list .job-list ul a:hover {
+    color: #FF8500;
+    font-weight: 700;
+}
+
+
+.navbar .list .item-list a {
+    text-decoration: none;
+    color: #938C8C;
+}
+
+.navbar .list .item-list a:hover {
+    color: #282828;
+    font-weight: bold;
+}
+
+.navbar .list .item-list i {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    top: 23px;
+}
+
+.navbar .items {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+}
+
+.navbar .items a {
+    text-decoration: none;
+    color: #938C8C;
+}
+
+.navbar .items .left-items {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.navbar .items .left-items .login {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar .items .left-items a {
+    color: #282828;
+}
+
+.navbar .items .lang {
+    display: flex;
+    gap: 2px;
+    font-size: 12px;
+    margin-top: auto;
+    color: #C5BCB3;
+}
+
+.navbar .items .lang p,
+.navbar .items .lang a:nth-child(3),
+.navbar .items .lang a:active {
+    color: #FF8500;
+}
+
+.hero {
+    width: 100%;
+    background-image: url(../images/mybackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .content h1 {
+    font-size: 24px;
+    margin-top: 128px;
+}
+
+.hero .content .txt {
+    margin: 18px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero .content .btn {
+    background-color: #282828;
+    padding: 4px 32px;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero .content .search-box {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 40%;
+}
+
+.hero .content .search-box input {
+    border: none;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.hero .content .search-box input:focus {
+    outline: none;
+}
+
+.hero .content .search-box .search-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #938C8C;
+    position: absolute;
+    right: 0%;
+}
+
+.hero .content .search-box .search-icons button {
+    border: none;
+    background-color: transparent;
+    color: #938C8C;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hero .content .search-box .search-icons i {
+    font-size: 18px;
+}
+
+.hero .content .links {
+    display: flex;
+    gap: 32px;
+    margin-top: 36px;
+}
+
+.hero .content .links a {
+    text-decoration: none;
+    color: #938C8C;
+}
+
+.hero .content .links a:hover {
+    color: #282828;
+    font-weight: bold;
+}
+
+.hero .content .links a::after {
+    content: '';
+    display: block;
+    height: 2px;
+}
+
+.hero .content .links .selected-link {
+    font-weight: 600;
+    color: #282828;
+    position: relative;
+}
+
+.hero .content .links .selected-link::after {
+    position: absolute;
+    width: 50%;
+    background-color: #FF8500;
+}
+
+
+
+.hero .content .cards-parent {
+    display: flex;
+    gap: 106px;
+    flex-wrap: wrap;
+    margin
+    : 32px 0 64px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .content .card {
+    border: none;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(40, 40, 40, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.hero .content .card .card-top {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.hero .content .card .card-top p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+.hero .content .card h1 {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+.hero .content .card p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+
+.hero .content .card span {
+    color: #938C8C;
+}
+
+.hero .content .card .details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero .content .card .details p:nth-child(2) {
+    margin-left: 70px;
+}
+
+.hero .content .card .details p:nth-child(4) {
+    margin-left: 45px;
+}
+
+
+.hero .content .card button {
+    background: #282828;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin: 30px 0 10px 0;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #282828;
+    color: white;
+    padding: 32px 200px;
+}
+
+footer .my-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 42px;
+}
+
+footer .my-footer .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 108px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-top .footer-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+footer .footer-top .footer-links h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+footer .footer-top .footer-links a {
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+
+footer .my-footer .footer-end {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+
+}
+
+footer .my-footer .footer-end span {
+    width: 64%;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+}
