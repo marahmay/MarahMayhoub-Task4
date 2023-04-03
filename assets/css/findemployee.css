@@ -8,6 +8,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -35,6 +37,20 @@ body {
     margin-left: 10%;
 }
 
+.navbar .list .item-list .active-job{
+    color: #282828;
+    font-weight: bold;
+}
+
+.navbar .list .item-list .img-list {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    position: absolute;
+    top: 73%;
+    left: 35%;
+}
+
 .navbar .list .job-list {
     background-color: #282828;
     border-radius: 8px;
@@ -48,17 +64,6 @@ body {
     list-style: none;
     padding: 12px 64px;
     gap: 64px;
-}
-
-.navbar .list .job-list::after {
-    content: " ";
-    position: absolute;
-    top: -42%;
-    left: 20%;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent;
-    border-bottom-color: #282828;
 }
 
 .navbar .list .job-list .selected-search {
@@ -129,6 +134,9 @@ body {
 .navbar .items .lang a:active {
     color: #FF8500;
 }
+
+
+/* Section */
 
 .hero {
     width: 100%;
@@ -241,8 +249,6 @@ body {
     background-color: #FF8500;
 }
 
-
-
 .hero .content .cards-parent {
     display: flex;
     gap: 106px;
@@ -316,6 +322,7 @@ body {
     cursor: pointer;
 }
 
+/* Footer */
 
 footer {
     width: 100%;

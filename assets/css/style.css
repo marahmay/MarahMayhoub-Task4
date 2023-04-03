@@ -37,6 +37,11 @@ body {
     margin-left: 10%;
 }
 
+.navbar .list .item-list .active-job{
+    color: #282828;
+    font-weight: bold;
+}
+
 .navbar .list .item-list .img-list {
     width: 20px;
     height: 20px;
