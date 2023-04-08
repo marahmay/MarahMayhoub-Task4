@@ -120,7 +120,6 @@ body {
     background-color: #282828;
     border-radius: 8px;
     margin: auto;
-    margin: 0 50px;
     margin-top:55px;
     position: fixed;
     z-index: 1;
@@ -130,11 +129,11 @@ body {
 .hero .content .job-list ul {
     display: flex;
     list-style: none;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     padding: 12px 64px;
     gap: 64px;
+
 }
 
 .hero .content .job-list ul a {
